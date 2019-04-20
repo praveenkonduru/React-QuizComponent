@@ -4,10 +4,11 @@ import App from '../../App';
 import { shallow, mount, render } from 'enzyme';
 import { assert } from 'chai';
 
+
 let quizComponentExists = false;
 let Quiz;
 try {
-  Quiz = require('../../Quiz.js').default;
+  Quiz = require('../../module1/Quiz.js').default;
   quizComponentExists = true;
 } catch (e) {
   quizComponentExists = false;
@@ -15,7 +16,7 @@ try {
 
 let fs = require('fs');
 
-describe('App Component', () => {
+fdescribe('App Component', () => {
   it('renders Quiz component @app-component-displays-quiz-component', () => {
     assert(quizComponentExists, "The Quiz component hasn't been created yet.")
 
