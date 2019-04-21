@@ -14,7 +14,7 @@ try {
   quizComponentExists = false;
 }
 
-let fs = require('fs');
+//let fs = require('fs');
 
 describe('App Component', () => {
   it('renders Quiz component @app-component-displays-quiz-component', () => {
