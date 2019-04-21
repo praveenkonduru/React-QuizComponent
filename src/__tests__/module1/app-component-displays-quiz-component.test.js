@@ -8,7 +8,7 @@ import { assert } from 'chai';
 let quizComponentExists = false;
 let Quiz;
 try {
-  Quiz = require('../../module1/Quiz.js').default;
+  Quiz = require('../../Quiz').default;
   quizComponentExists = true;
 } catch (e) {
   quizComponentExists = false;
@@ -16,7 +16,7 @@ try {
 
 let fs = require('fs');
 
-fdescribe('App Component', () => {
+describe('App Component', () => {
   it('renders Quiz component @app-component-displays-quiz-component', () => {
     assert(quizComponentExists, "The Quiz component hasn't been created yet.")
 
